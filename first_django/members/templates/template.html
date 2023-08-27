@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+{% for x in fruits %}
+  <h1>{{ x }}</h1>
+{% endfor %}
+
+  <h1>hello {{ firstname }} {{lastname}}</h1>
+  {% with damadname="Tobias" madarname='zaa' %}
+  <h3>I am  {{ damadname }} of {{madarname}}</h3>
+  {% endwith %}
+
+  {% if age < 32 %}
+  <p>You are so young and under 32, so be gamgin akbar</p>
+  {% elif age == 32 %}
+  <p>Don't be so gamgin akbar you are 32</p>
+  {% else %}
+  <p>You are so big and bigger than 32</p>
+  {% endif %}
+
+
+<p>In views.py you can see what the fruits variable looks like.</p>
+
+</body>
+</html>
